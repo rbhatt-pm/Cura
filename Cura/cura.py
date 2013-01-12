@@ -64,7 +64,7 @@ def main():
 		printWindow.startPrintInterface(options.printfile)
 	elif options.slice is not None:
 		from Cura.util import sliceRun
-		sliceRun.runSlice(args)
+		sliceRun.startSliceCommandProcess(args)
 	else:
 		#Place any unused arguments as last file, so Cura starts with opening those files.
 		if len(args) > 0:

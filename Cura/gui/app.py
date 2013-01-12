@@ -6,9 +6,7 @@ import platform
 import shutil
 import glob
 import warnings
-
-#Only import the _core to save import time
-import wx._core
+import wx
 
 class CuraApp(wx.App):
 	def __init__(self):
